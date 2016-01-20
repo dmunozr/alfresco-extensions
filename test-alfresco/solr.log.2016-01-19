@@ -1,0 +1,186 @@
+2016-01-19 11:54:27,577 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Initializing SuggestComponent
+2016-01-19 11:54:27,577 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Initializing SuggestComponent
+2016-01-19 11:54:27,654 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Loading suggester index for: shingleBasedSuggestions
+2016-01-19 11:54:27,677 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Loaded suggester shingleBasedSuggestions, took 23 ms
+2016-01-19 12:00:28,480 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Initializing SuggestComponent
+2016-01-19 12:00:28,480 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Initializing SuggestComponent
+2016-01-19 12:00:28,585 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Loading suggester index for: shingleBasedSuggestions
+2016-01-19 12:00:28,889 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Loaded suggester shingleBasedSuggestions, took 304 ms
+2016-01-19 12:16:07,241 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Initializing SuggestComponent
+2016-01-19 12:16:07,241 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Initializing SuggestComponent
+2016-01-19 12:16:07,402 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Loading suggester index for: shingleBasedSuggestions
+2016-01-19 12:16:07,692 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Loaded suggester shingleBasedSuggestions, took 289 ms
+2016-01-19 12:29:01,294 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Initializing SuggestComponent
+2016-01-19 12:29:01,294 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Initializing SuggestComponent
+2016-01-19 12:29:01,390 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Loading suggester index for: shingleBasedSuggestions
+2016-01-19 12:29:01,755 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Loaded suggester shingleBasedSuggestions, took 364 ms
+2016-01-19 12:35:45,004 ERROR [org.apache.solr.core.SolrCore] org.apache.solr.common.SolrException: openNewSearcher called on closed core
+	at org.apache.solr.core.SolrCore.openNewSearcher(SolrCore.java:1433)
+	at org.apache.solr.core.SolrCore.getRealtimeSearcher(SolrCore.java:1408)
+	at org.apache.solr.handler.component.RealTimeGetComponent.process(RealTimeGetComponent.java:169)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:218)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:135)
+	at org.alfresco.solr.SolrInformationServer.getTrackerInitialState(SolrInformationServer.java:1118)
+	at org.alfresco.solr.tracker.AbstractTracker.getTrackerState(AbstractTracker.java:250)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:141)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+
+2016-01-19 12:35:45,006 ERROR [org.quartz.core.JobRunShell] Job Solr.ModelTracker-archive threw an unhandled Exception: 
+java.lang.NullPointerException
+	at org.alfresco.solr.SolrInformationServer.getTrackerInitialState(SolrInformationServer.java:1125)
+	at org.alfresco.solr.tracker.AbstractTracker.getTrackerState(AbstractTracker.java:250)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:141)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-19 12:35:45,007 ERROR [org.quartz.core.ErrorLogger] Job (Solr.ModelTracker-archive threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.NullPointerException]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:227)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+Caused by: java.lang.NullPointerException
+	at org.alfresco.solr.SolrInformationServer.getTrackerInitialState(SolrInformationServer.java:1125)
+	at org.alfresco.solr.tracker.AbstractTracker.getTrackerState(AbstractTracker.java:250)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:141)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	... 1 more
+2016-01-19 12:43:55,639 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Initializing SuggestComponent
+2016-01-19 12:43:55,639 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Initializing SuggestComponent
+2016-01-19 12:43:55,748 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Loading suggester index for: shingleBasedSuggestions
+2016-01-19 12:43:55,985 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Loaded suggester shingleBasedSuggestions, took 236 ms
+2016-01-19 12:59:45,026 ERROR [org.alfresco.solr.tracker.AbstractTracker] Tracking failed
+java.lang.IllegalStateException: Connection factory has been shutdown.
+	at org.apache.commons.httpclient.MultiThreadedHttpConnectionManager.doGetConnection(MultiThreadedHttpConnectionManager.java:463)
+	at org.apache.commons.httpclient.MultiThreadedHttpConnectionManager.getConnectionWithTimeout(MultiThreadedHttpConnectionManager.java:416)
+	at org.apache.commons.httpclient.HttpMethodDirector.executeMethod(HttpMethodDirector.java:153)
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:397)
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:323)
+	at org.alfresco.httpclient.AbstractHttpClient.executeMethod(AbstractHttpClient.java:135)
+	at org.alfresco.httpclient.AbstractHttpClient.sendRemoteRequest(AbstractHttpClient.java:111)
+	at org.alfresco.httpclient.HttpClientFactory$DefaultHttpClient.sendRequest(HttpClientFactory.java:407)
+	at org.alfresco.solr.client.SOLRAPIClient.getTransactions(SOLRAPIClient.java:412)
+	at org.alfresco.solr.tracker.MetadataTracker.checkRepoAndIndexConsistency(MetadataTracker.java:156)
+	at org.alfresco.solr.tracker.MetadataTracker.trackRepository(MetadataTracker.java:122)
+	at org.alfresco.solr.tracker.MetadataTracker.doTrack(MetadataTracker.java:97)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:152)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-19 12:59:45,030 ERROR [org.alfresco.solr.tracker.AbstractTracker] Tracking failed
+java.lang.IllegalStateException: Connection factory has been shutdown.
+	at org.apache.commons.httpclient.MultiThreadedHttpConnectionManager.doGetConnection(MultiThreadedHttpConnectionManager.java:463)
+	at org.apache.commons.httpclient.MultiThreadedHttpConnectionManager.getConnectionWithTimeout(MultiThreadedHttpConnectionManager.java:416)
+	at org.apache.commons.httpclient.HttpMethodDirector.executeMethod(HttpMethodDirector.java:153)
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:397)
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:323)
+	at org.alfresco.httpclient.AbstractHttpClient.executeMethod(AbstractHttpClient.java:135)
+	at org.alfresco.httpclient.AbstractHttpClient.sendRemoteRequest(AbstractHttpClient.java:111)
+	at org.alfresco.httpclient.HttpClientFactory$DefaultHttpClient.sendRequest(HttpClientFactory.java:407)
+	at org.alfresco.solr.client.SOLRAPIClient.getAclChangeSets(SOLRAPIClient.java:155)
+	at org.alfresco.solr.tracker.AclTracker.checkRepoAndIndexConsistency(AclTracker.java:347)
+	at org.alfresco.solr.tracker.AclTracker.trackRepository(AclTracker.java:313)
+	at org.alfresco.solr.tracker.AclTracker.doTrack(AclTracker.java:104)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:152)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-19 12:59:45,035 ERROR [org.alfresco.solr.tracker.AbstractTracker] Tracking failed
+java.lang.IllegalStateException: Connection factory has been shutdown.
+	at org.apache.commons.httpclient.MultiThreadedHttpConnectionManager.doGetConnection(MultiThreadedHttpConnectionManager.java:463)
+	at org.apache.commons.httpclient.MultiThreadedHttpConnectionManager.getConnectionWithTimeout(MultiThreadedHttpConnectionManager.java:416)
+	at org.apache.commons.httpclient.HttpMethodDirector.executeMethod(HttpMethodDirector.java:153)
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:397)
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:323)
+	at org.alfresco.httpclient.AbstractHttpClient.executeMethod(AbstractHttpClient.java:135)
+	at org.alfresco.httpclient.AbstractHttpClient.sendRemoteRequest(AbstractHttpClient.java:111)
+	at org.alfresco.httpclient.HttpClientFactory$DefaultHttpClient.sendRequest(HttpClientFactory.java:407)
+	at org.alfresco.solr.client.SOLRAPIClient.getModelsDiff(SOLRAPIClient.java:1088)
+	at org.alfresco.solr.tracker.ModelTracker.trackModelsImpl(ModelTracker.java:245)
+	at org.alfresco.solr.tracker.ModelTracker.trackModels(ModelTracker.java:217)
+	at org.alfresco.solr.tracker.ModelTracker.doTrack(ModelTracker.java:167)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:152)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-19 13:06:56,360 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Initializing SuggestComponent
+2016-01-19 13:06:56,360 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Initializing SuggestComponent
+2016-01-19 13:06:56,530 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Loading suggester index for: shingleBasedSuggestions
+2016-01-19 13:06:56,892 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Loaded suggester shingleBasedSuggestions, took 361 ms
+2016-01-19 13:23:37,261 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Initializing SuggestComponent
+2016-01-19 13:23:37,261 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Initializing SuggestComponent
+2016-01-19 13:23:37,371 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Loading suggester index for: shingleBasedSuggestions
+2016-01-19 13:23:37,729 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Loaded suggester shingleBasedSuggestions, took 358 ms
+2016-01-19 13:24:15,009 ERROR [org.apache.solr.core.SolrCore] org.apache.solr.common.SolrException: openNewSearcher called on closed core
+	at org.apache.solr.core.SolrCore.openNewSearcher(SolrCore.java:1433)
+	at org.apache.solr.core.SolrCore.getRealtimeSearcher(SolrCore.java:1408)
+	at org.apache.solr.handler.component.RealTimeGetComponent.process(RealTimeGetComponent.java:169)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:218)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:135)
+	at org.alfresco.solr.SolrInformationServer.getTrackerInitialState(SolrInformationServer.java:1005)
+	at org.alfresco.solr.tracker.AbstractTracker.getTrackerState(AbstractTracker.java:248)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:141)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+
+2016-01-19 13:24:15,012 ERROR [org.quartz.core.JobRunShell] Job Solr.ModelTracker-alfresco threw an unhandled Exception: 
+java.lang.NullPointerException
+	at org.alfresco.solr.SolrInformationServer.getTrackerInitialState(SolrInformationServer.java:1012)
+	at org.alfresco.solr.tracker.AbstractTracker.getTrackerState(AbstractTracker.java:248)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:141)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-19 13:24:15,014 ERROR [org.quartz.core.ErrorLogger] Job (Solr.ModelTracker-alfresco threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.NullPointerException]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:227)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+Caused by: java.lang.NullPointerException
+	at org.alfresco.solr.SolrInformationServer.getTrackerInitialState(SolrInformationServer.java:1012)
+	at org.alfresco.solr.tracker.AbstractTracker.getTrackerState(AbstractTracker.java:248)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:141)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	... 1 more
+2016-01-19 13:32:12,492 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Initializing SuggestComponent
+2016-01-19 13:32:12,492 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Initializing SuggestComponent
+2016-01-19 13:32:12,601 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Loading suggester index for: shingleBasedSuggestions
+2016-01-19 13:32:12,950 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Loaded suggester shingleBasedSuggestions, took 349 ms
+2016-01-19 13:59:29,307 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Initializing SuggestComponent
+2016-01-19 13:59:29,307 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Initializing SuggestComponent
+2016-01-19 13:59:29,413 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Loading suggester index for: shingleBasedSuggestions
+2016-01-19 13:59:29,796 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Loaded suggester shingleBasedSuggestions, took 383 ms
+2016-01-19 14:14:34,383 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Initializing SuggestComponent
+2016-01-19 14:14:34,383 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Initializing SuggestComponent
+2016-01-19 14:14:34,489 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Loading suggester index for: shingleBasedSuggestions
+2016-01-19 14:14:34,824 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Loaded suggester shingleBasedSuggestions, took 333 ms
+2016-01-19 15:34:06,919 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Initializing SuggestComponent
+2016-01-19 15:34:06,919 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Initializing SuggestComponent
+2016-01-19 15:34:07,019 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Loading suggester index for: shingleBasedSuggestions
+2016-01-19 15:34:07,342 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Loaded suggester shingleBasedSuggestions, took 323 ms
+2016-01-19 15:52:12,167 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Initializing SuggestComponent
+2016-01-19 15:52:12,167 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Initializing SuggestComponent
+2016-01-19 15:52:12,271 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Loading suggester index for: shingleBasedSuggestions
+2016-01-19 15:52:12,554 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Loaded suggester shingleBasedSuggestions, took 283 ms
+2016-01-19 16:30:49,137 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Initializing SuggestComponent
+2016-01-19 16:30:49,137 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Initializing SuggestComponent
+2016-01-19 16:30:49,237 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Loading suggester index for: shingleBasedSuggestions
+2016-01-19 16:30:49,569 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Loaded suggester shingleBasedSuggestions, took 331 ms
+2016-01-19 16:41:08,967 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Initializing SuggestComponent
+2016-01-19 16:41:08,967 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Initializing SuggestComponent
+2016-01-19 16:41:09,074 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Loading suggester index for: shingleBasedSuggestions
+2016-01-19 16:41:09,396 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Loaded suggester shingleBasedSuggestions, took 322 ms
+2016-01-19 17:00:38,520 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Initializing SuggestComponent
+2016-01-19 17:00:38,520 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Initializing SuggestComponent
+2016-01-19 17:00:38,620 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Loading suggester index for: shingleBasedSuggestions
+2016-01-19 17:00:38,966 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Loaded suggester shingleBasedSuggestions, took 346 ms
+2016-01-19 17:19:46,073 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Initializing SuggestComponent
+2016-01-19 17:19:46,073 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Initializing SuggestComponent
+2016-01-19 17:19:46,174 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Loading suggester index for: shingleBasedSuggestions
+2016-01-19 17:19:46,505 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Loaded suggester shingleBasedSuggestions, took 331 ms
+2016-01-19 17:39:25,639 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Initializing SuggestComponent
+2016-01-19 17:39:25,639 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Initializing SuggestComponent
+2016-01-19 17:39:25,739 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Loading suggester index for: shingleBasedSuggestions
+2016-01-19 17:39:25,979 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Loaded suggester shingleBasedSuggestions, took 240 ms

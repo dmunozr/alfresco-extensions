@@ -1,0 +1,6 @@
+<webscript>
+  <shortname>Configuration Sample</shortname>
+  <description>Response driven from configuration</description>
+  <url>/config</url>
+  <authentication>user</authentication>
+</webscript>

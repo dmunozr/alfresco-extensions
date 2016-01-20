@@ -6,4 +6,5 @@ springloadedfile=~/.m2/repository/org/springframework/springloaded/1.2.3.RELEASE
 if [ ! -f $springloadedfile ]; then
 mvn validate -Psetup
 fi
-MAVEN_OPTS="-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=8000 -javaagent:$springloadedfile -noverify -Xms256m -Xmx2G" mvn install -Prun,enterprise
+MAVEN_OPTS="-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=8000 -javaagent:$springloadedfile -noverify -Xms256m -Xmx2G" mvn install -Prun
+# ,enterprise

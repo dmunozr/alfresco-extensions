@@ -1,0 +1,6 @@
+<webscript>
+  <shortname>Request Body Sample</shortname>
+  <description>Render the request body in the response</description>
+  <url>/requestbody</url>
+  <authentication>user</authentication>
+</webscript>

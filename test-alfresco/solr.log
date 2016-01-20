@@ -1,8 +1,994 @@
-2016-01-19 11:54:27,577 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Initializing SuggestComponent
-2016-01-19 11:54:27,577 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Initializing SuggestComponent
-2016-01-19 11:54:27,654 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Loading suggester index for: shingleBasedSuggestions
-2016-01-19 11:54:27,677 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Loaded suggester shingleBasedSuggestions, took 23 ms
-2016-01-19 12:00:28,480 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Initializing SuggestComponent
-2016-01-19 12:00:28,480 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Initializing SuggestComponent
-2016-01-19 12:00:28,585 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Loading suggester index for: shingleBasedSuggestions
-2016-01-19 12:00:28,889 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Loaded suggester shingleBasedSuggestions, took 304 ms
+2016-01-20 08:40:35,492 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Initializing SuggestComponent
+2016-01-20 08:40:35,492 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Initializing SuggestComponent
+2016-01-20 08:40:35,585 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Loading suggester index for: shingleBasedSuggestions
+2016-01-20 08:40:35,891 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Loaded suggester shingleBasedSuggestions, took 305 ms
+2016-01-20 08:40:40,895 ERROR [org.alfresco.solr.tracker.AbstractTracker] Model tracking failed
+org.alfresco.error.AlfrescoRuntimeException: 00200000 GetModelsDiff return status is 404
+	at org.alfresco.solr.client.SOLRAPIClient.getModelsDiff(SOLRAPIClient.java:1091)
+	at org.alfresco.solr.tracker.ModelTracker.trackModelsImpl(ModelTracker.java:249)
+	at org.alfresco.solr.tracker.ModelTracker.trackModels(ModelTracker.java:207)
+	at org.alfresco.solr.tracker.ModelTracker.ensureFirstModelSync(ModelTracker.java:229)
+	at org.alfresco.solr.tracker.CoreWatcherJob.registerForCore(CoreWatcherJob.java:131)
+	at org.alfresco.solr.tracker.CoreWatcherJob.execute(CoreWatcherJob.java:74)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-20 08:40:40,929 ERROR [org.alfresco.solr.tracker.AbstractTracker] Model tracking failed
+org.alfresco.error.AlfrescoRuntimeException: 00200001 GetModelsDiff return status is 404
+	at org.alfresco.solr.client.SOLRAPIClient.getModelsDiff(SOLRAPIClient.java:1091)
+	at org.alfresco.solr.tracker.ModelTracker.trackModelsImpl(ModelTracker.java:249)
+	at org.alfresco.solr.tracker.ModelTracker.trackModels(ModelTracker.java:207)
+	at org.alfresco.solr.tracker.ModelTracker.ensureFirstModelSync(ModelTracker.java:229)
+	at org.alfresco.solr.tracker.CoreWatcherJob.registerForCore(CoreWatcherJob.java:131)
+	at org.alfresco.solr.tracker.CoreWatcherJob.execute(CoreWatcherJob.java:74)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-20 08:40:45,062 ERROR [org.alfresco.solr.tracker.AbstractTracker] Tracking failed
+org.alfresco.error.AlfrescoRuntimeException: 00200003 api/solr/aclchangesets return status:404
+	at org.alfresco.solr.client.SOLRAPIClient.getAclChangeSets(SOLRAPIClient.java:159)
+	at org.alfresco.solr.tracker.AclTracker.checkRepoAndIndexConsistency(AclTracker.java:347)
+	at org.alfresco.solr.tracker.AclTracker.trackRepository(AclTracker.java:313)
+	at org.alfresco.solr.tracker.AclTracker.doTrack(AclTracker.java:104)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:153)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-20 08:40:45,064 ERROR [org.alfresco.solr.tracker.AbstractTracker] Tracking failed
+org.alfresco.error.AlfrescoRuntimeException: 00200002 api/solr/aclchangesets return status:404
+	at org.alfresco.solr.client.SOLRAPIClient.getAclChangeSets(SOLRAPIClient.java:159)
+	at org.alfresco.solr.tracker.AclTracker.checkRepoAndIndexConsistency(AclTracker.java:347)
+	at org.alfresco.solr.tracker.AclTracker.trackRepository(AclTracker.java:313)
+	at org.alfresco.solr.tracker.AclTracker.doTrack(AclTracker.java:104)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:153)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-20 08:40:45,075 ERROR [org.alfresco.solr.tracker.AbstractTracker] Tracking failed
+org.alfresco.error.AlfrescoRuntimeException: 00200004 GetModelsDiff return status is 404
+	at org.alfresco.solr.client.SOLRAPIClient.getModelsDiff(SOLRAPIClient.java:1091)
+	at org.alfresco.solr.tracker.ModelTracker.trackModelsImpl(ModelTracker.java:249)
+	at org.alfresco.solr.tracker.ModelTracker.trackModels(ModelTracker.java:207)
+	at org.alfresco.solr.tracker.ModelTracker.doTrack(ModelTracker.java:167)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:153)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-20 08:41:00,017 ERROR [org.alfresco.solr.tracker.AbstractTracker] Tracking failed
+org.alfresco.error.AlfrescoRuntimeException: 00200005 api/solr/aclchangesets return status:404
+	at org.alfresco.solr.client.SOLRAPIClient.getAclChangeSets(SOLRAPIClient.java:159)
+	at org.alfresco.solr.tracker.AclTracker.checkRepoAndIndexConsistency(AclTracker.java:347)
+	at org.alfresco.solr.tracker.AclTracker.trackRepository(AclTracker.java:313)
+	at org.alfresco.solr.tracker.AclTracker.doTrack(AclTracker.java:104)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:153)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-20 08:41:00,019 ERROR [org.alfresco.solr.tracker.AbstractTracker] Tracking failed
+org.alfresco.error.AlfrescoRuntimeException: 00200006 api/solr/aclchangesets return status:404
+	at org.alfresco.solr.client.SOLRAPIClient.getAclChangeSets(SOLRAPIClient.java:159)
+	at org.alfresco.solr.tracker.AclTracker.checkRepoAndIndexConsistency(AclTracker.java:347)
+	at org.alfresco.solr.tracker.AclTracker.trackRepository(AclTracker.java:313)
+	at org.alfresco.solr.tracker.AclTracker.doTrack(AclTracker.java:104)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:153)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-20 08:41:00,036 ERROR [org.alfresco.solr.tracker.AbstractTracker] Tracking failed
+org.alfresco.error.AlfrescoRuntimeException: 00200007 GetModelsDiff return status is 404
+	at org.alfresco.solr.client.SOLRAPIClient.getModelsDiff(SOLRAPIClient.java:1091)
+	at org.alfresco.solr.tracker.ModelTracker.trackModelsImpl(ModelTracker.java:249)
+	at org.alfresco.solr.tracker.ModelTracker.trackModels(ModelTracker.java:207)
+	at org.alfresco.solr.tracker.ModelTracker.doTrack(ModelTracker.java:167)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:153)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-20 08:41:15,014 ERROR [org.alfresco.solr.tracker.AbstractTracker] Tracking failed
+org.alfresco.error.AlfrescoRuntimeException: 00200009 api/solr/aclchangesets return status:404
+	at org.alfresco.solr.client.SOLRAPIClient.getAclChangeSets(SOLRAPIClient.java:159)
+	at org.alfresco.solr.tracker.AclTracker.checkRepoAndIndexConsistency(AclTracker.java:347)
+	at org.alfresco.solr.tracker.AclTracker.trackRepository(AclTracker.java:313)
+	at org.alfresco.solr.tracker.AclTracker.doTrack(AclTracker.java:104)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:153)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-20 08:41:15,016 ERROR [org.alfresco.solr.tracker.AbstractTracker] Tracking failed
+org.alfresco.error.AlfrescoRuntimeException: 00200008 api/solr/aclchangesets return status:404
+	at org.alfresco.solr.client.SOLRAPIClient.getAclChangeSets(SOLRAPIClient.java:159)
+	at org.alfresco.solr.tracker.AclTracker.checkRepoAndIndexConsistency(AclTracker.java:347)
+	at org.alfresco.solr.tracker.AclTracker.trackRepository(AclTracker.java:313)
+	at org.alfresco.solr.tracker.AclTracker.doTrack(AclTracker.java:104)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:153)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-20 08:41:15,029 ERROR [org.alfresco.solr.tracker.AbstractTracker] Tracking failed
+org.alfresco.error.AlfrescoRuntimeException: 00200010 GetModelsDiff return status is 404
+	at org.alfresco.solr.client.SOLRAPIClient.getModelsDiff(SOLRAPIClient.java:1091)
+	at org.alfresco.solr.tracker.ModelTracker.trackModelsImpl(ModelTracker.java:249)
+	at org.alfresco.solr.tracker.ModelTracker.trackModels(ModelTracker.java:207)
+	at org.alfresco.solr.tracker.ModelTracker.doTrack(ModelTracker.java:167)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:153)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-20 08:41:30,013 ERROR [org.alfresco.solr.tracker.AbstractTracker] Tracking failed
+org.alfresco.error.AlfrescoRuntimeException: 00200011 api/solr/aclchangesets return status:404
+	at org.alfresco.solr.client.SOLRAPIClient.getAclChangeSets(SOLRAPIClient.java:159)
+	at org.alfresco.solr.tracker.AclTracker.checkRepoAndIndexConsistency(AclTracker.java:347)
+	at org.alfresco.solr.tracker.AclTracker.trackRepository(AclTracker.java:313)
+	at org.alfresco.solr.tracker.AclTracker.doTrack(AclTracker.java:104)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:153)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-20 08:41:30,016 ERROR [org.alfresco.solr.tracker.AbstractTracker] Tracking failed
+org.alfresco.error.AlfrescoRuntimeException: 00200012 api/solr/aclchangesets return status:404
+	at org.alfresco.solr.client.SOLRAPIClient.getAclChangeSets(SOLRAPIClient.java:159)
+	at org.alfresco.solr.tracker.AclTracker.checkRepoAndIndexConsistency(AclTracker.java:347)
+	at org.alfresco.solr.tracker.AclTracker.trackRepository(AclTracker.java:313)
+	at org.alfresco.solr.tracker.AclTracker.doTrack(AclTracker.java:104)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:153)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-20 08:41:30,030 ERROR [org.alfresco.solr.tracker.AbstractTracker] Tracking failed
+org.alfresco.error.AlfrescoRuntimeException: 00200013 GetModelsDiff return status is 404
+	at org.alfresco.solr.client.SOLRAPIClient.getModelsDiff(SOLRAPIClient.java:1091)
+	at org.alfresco.solr.tracker.ModelTracker.trackModelsImpl(ModelTracker.java:249)
+	at org.alfresco.solr.tracker.ModelTracker.trackModels(ModelTracker.java:207)
+	at org.alfresco.solr.tracker.ModelTracker.doTrack(ModelTracker.java:167)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:153)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-20 08:41:45,015 ERROR [org.alfresco.solr.tracker.AbstractTracker] Tracking failed
+org.alfresco.error.AlfrescoRuntimeException: 00200015 api/solr/aclchangesets return status:404
+	at org.alfresco.solr.client.SOLRAPIClient.getAclChangeSets(SOLRAPIClient.java:159)
+	at org.alfresco.solr.tracker.AclTracker.checkRepoAndIndexConsistency(AclTracker.java:347)
+	at org.alfresco.solr.tracker.AclTracker.trackRepository(AclTracker.java:313)
+	at org.alfresco.solr.tracker.AclTracker.doTrack(AclTracker.java:104)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:153)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-20 08:41:45,017 ERROR [org.alfresco.solr.tracker.AbstractTracker] Tracking failed
+org.alfresco.error.AlfrescoRuntimeException: 00200014 api/solr/aclchangesets return status:404
+	at org.alfresco.solr.client.SOLRAPIClient.getAclChangeSets(SOLRAPIClient.java:159)
+	at org.alfresco.solr.tracker.AclTracker.checkRepoAndIndexConsistency(AclTracker.java:347)
+	at org.alfresco.solr.tracker.AclTracker.trackRepository(AclTracker.java:313)
+	at org.alfresco.solr.tracker.AclTracker.doTrack(AclTracker.java:104)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:153)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-20 08:41:45,032 ERROR [org.alfresco.solr.tracker.AbstractTracker] Tracking failed
+org.alfresco.error.AlfrescoRuntimeException: 00200016 GetModelsDiff return status is 404
+	at org.alfresco.solr.client.SOLRAPIClient.getModelsDiff(SOLRAPIClient.java:1091)
+	at org.alfresco.solr.tracker.ModelTracker.trackModelsImpl(ModelTracker.java:249)
+	at org.alfresco.solr.tracker.ModelTracker.trackModels(ModelTracker.java:207)
+	at org.alfresco.solr.tracker.ModelTracker.doTrack(ModelTracker.java:167)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:153)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-20 08:42:00,012 ERROR [org.alfresco.solr.tracker.AbstractTracker] Tracking failed
+org.alfresco.error.AlfrescoRuntimeException: 00200018 api/solr/aclchangesets return status:404
+	at org.alfresco.solr.client.SOLRAPIClient.getAclChangeSets(SOLRAPIClient.java:159)
+	at org.alfresco.solr.tracker.AclTracker.checkRepoAndIndexConsistency(AclTracker.java:347)
+	at org.alfresco.solr.tracker.AclTracker.trackRepository(AclTracker.java:313)
+	at org.alfresco.solr.tracker.AclTracker.doTrack(AclTracker.java:104)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:153)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-20 08:42:00,014 ERROR [org.alfresco.solr.tracker.AbstractTracker] Tracking failed
+org.alfresco.error.AlfrescoRuntimeException: 00200017 api/solr/aclchangesets return status:404
+	at org.alfresco.solr.client.SOLRAPIClient.getAclChangeSets(SOLRAPIClient.java:159)
+	at org.alfresco.solr.tracker.AclTracker.checkRepoAndIndexConsistency(AclTracker.java:347)
+	at org.alfresco.solr.tracker.AclTracker.trackRepository(AclTracker.java:313)
+	at org.alfresco.solr.tracker.AclTracker.doTrack(AclTracker.java:104)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:153)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-20 08:42:00,027 ERROR [org.alfresco.solr.tracker.AbstractTracker] Tracking failed
+org.alfresco.error.AlfrescoRuntimeException: 00200019 GetModelsDiff return status is 404
+	at org.alfresco.solr.client.SOLRAPIClient.getModelsDiff(SOLRAPIClient.java:1091)
+	at org.alfresco.solr.tracker.ModelTracker.trackModelsImpl(ModelTracker.java:249)
+	at org.alfresco.solr.tracker.ModelTracker.trackModels(ModelTracker.java:207)
+	at org.alfresco.solr.tracker.ModelTracker.doTrack(ModelTracker.java:167)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:153)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-20 08:42:15,016 ERROR [org.alfresco.solr.tracker.AbstractTracker] Tracking failed
+org.alfresco.error.AlfrescoRuntimeException: 00200021 api/solr/aclchangesets return status:404
+	at org.alfresco.solr.client.SOLRAPIClient.getAclChangeSets(SOLRAPIClient.java:159)
+	at org.alfresco.solr.tracker.AclTracker.checkRepoAndIndexConsistency(AclTracker.java:347)
+	at org.alfresco.solr.tracker.AclTracker.trackRepository(AclTracker.java:313)
+	at org.alfresco.solr.tracker.AclTracker.doTrack(AclTracker.java:104)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:153)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-20 08:42:15,019 ERROR [org.alfresco.solr.tracker.AbstractTracker] Tracking failed
+org.alfresco.error.AlfrescoRuntimeException: 00200020 api/solr/aclchangesets return status:404
+	at org.alfresco.solr.client.SOLRAPIClient.getAclChangeSets(SOLRAPIClient.java:159)
+	at org.alfresco.solr.tracker.AclTracker.checkRepoAndIndexConsistency(AclTracker.java:347)
+	at org.alfresco.solr.tracker.AclTracker.trackRepository(AclTracker.java:313)
+	at org.alfresco.solr.tracker.AclTracker.doTrack(AclTracker.java:104)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:153)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-20 08:42:15,029 ERROR [org.alfresco.solr.tracker.AbstractTracker] Tracking failed
+org.alfresco.error.AlfrescoRuntimeException: 00200022 GetModelsDiff return status is 404
+	at org.alfresco.solr.client.SOLRAPIClient.getModelsDiff(SOLRAPIClient.java:1091)
+	at org.alfresco.solr.tracker.ModelTracker.trackModelsImpl(ModelTracker.java:249)
+	at org.alfresco.solr.tracker.ModelTracker.trackModels(ModelTracker.java:207)
+	at org.alfresco.solr.tracker.ModelTracker.doTrack(ModelTracker.java:167)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:153)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-20 08:42:30,014 ERROR [org.alfresco.solr.tracker.AbstractTracker] Tracking failed
+org.alfresco.error.AlfrescoRuntimeException: 00200023 api/solr/aclchangesets return status:404
+	at org.alfresco.solr.client.SOLRAPIClient.getAclChangeSets(SOLRAPIClient.java:159)
+	at org.alfresco.solr.tracker.AclTracker.checkRepoAndIndexConsistency(AclTracker.java:347)
+	at org.alfresco.solr.tracker.AclTracker.trackRepository(AclTracker.java:313)
+	at org.alfresco.solr.tracker.AclTracker.doTrack(AclTracker.java:104)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:153)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-20 08:42:30,017 ERROR [org.alfresco.solr.tracker.AbstractTracker] Tracking failed
+org.alfresco.error.AlfrescoRuntimeException: 00200024 api/solr/aclchangesets return status:404
+	at org.alfresco.solr.client.SOLRAPIClient.getAclChangeSets(SOLRAPIClient.java:159)
+	at org.alfresco.solr.tracker.AclTracker.checkRepoAndIndexConsistency(AclTracker.java:347)
+	at org.alfresco.solr.tracker.AclTracker.trackRepository(AclTracker.java:313)
+	at org.alfresco.solr.tracker.AclTracker.doTrack(AclTracker.java:104)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:153)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-20 08:42:30,026 ERROR [org.alfresco.solr.tracker.AbstractTracker] Tracking failed
+org.alfresco.error.AlfrescoRuntimeException: 00200025 GetModelsDiff return status is 404
+	at org.alfresco.solr.client.SOLRAPIClient.getModelsDiff(SOLRAPIClient.java:1091)
+	at org.alfresco.solr.tracker.ModelTracker.trackModelsImpl(ModelTracker.java:249)
+	at org.alfresco.solr.tracker.ModelTracker.trackModels(ModelTracker.java:207)
+	at org.alfresco.solr.tracker.ModelTracker.doTrack(ModelTracker.java:167)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:153)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-20 08:42:45,010 ERROR [org.alfresco.solr.tracker.AbstractTracker] Tracking failed
+org.alfresco.error.AlfrescoRuntimeException: 00200026 api/solr/aclchangesets return status:404
+	at org.alfresco.solr.client.SOLRAPIClient.getAclChangeSets(SOLRAPIClient.java:159)
+	at org.alfresco.solr.tracker.AclTracker.checkRepoAndIndexConsistency(AclTracker.java:347)
+	at org.alfresco.solr.tracker.AclTracker.trackRepository(AclTracker.java:313)
+	at org.alfresco.solr.tracker.AclTracker.doTrack(AclTracker.java:104)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:153)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-20 08:42:45,011 ERROR [org.alfresco.solr.tracker.AbstractTracker] Tracking failed
+org.alfresco.error.AlfrescoRuntimeException: 00200027 api/solr/aclchangesets return status:404
+	at org.alfresco.solr.client.SOLRAPIClient.getAclChangeSets(SOLRAPIClient.java:159)
+	at org.alfresco.solr.tracker.AclTracker.checkRepoAndIndexConsistency(AclTracker.java:347)
+	at org.alfresco.solr.tracker.AclTracker.trackRepository(AclTracker.java:313)
+	at org.alfresco.solr.tracker.AclTracker.doTrack(AclTracker.java:104)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:153)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-20 08:42:45,023 ERROR [org.alfresco.solr.tracker.AbstractTracker] Tracking failed
+org.alfresco.error.AlfrescoRuntimeException: 00200028 GetModelsDiff return status is 404
+	at org.alfresco.solr.client.SOLRAPIClient.getModelsDiff(SOLRAPIClient.java:1091)
+	at org.alfresco.solr.tracker.ModelTracker.trackModelsImpl(ModelTracker.java:249)
+	at org.alfresco.solr.tracker.ModelTracker.trackModels(ModelTracker.java:207)
+	at org.alfresco.solr.tracker.ModelTracker.doTrack(ModelTracker.java:167)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:153)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-20 08:43:00,011 ERROR [org.alfresco.solr.tracker.AbstractTracker] Tracking failed
+org.alfresco.error.AlfrescoRuntimeException: 00200030 api/solr/aclchangesets return status:404
+	at org.alfresco.solr.client.SOLRAPIClient.getAclChangeSets(SOLRAPIClient.java:159)
+	at org.alfresco.solr.tracker.AclTracker.checkRepoAndIndexConsistency(AclTracker.java:347)
+	at org.alfresco.solr.tracker.AclTracker.trackRepository(AclTracker.java:313)
+	at org.alfresco.solr.tracker.AclTracker.doTrack(AclTracker.java:104)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:153)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-20 08:43:00,013 ERROR [org.alfresco.solr.tracker.AbstractTracker] Tracking failed
+org.alfresco.error.AlfrescoRuntimeException: 00200029 api/solr/aclchangesets return status:404
+	at org.alfresco.solr.client.SOLRAPIClient.getAclChangeSets(SOLRAPIClient.java:159)
+	at org.alfresco.solr.tracker.AclTracker.checkRepoAndIndexConsistency(AclTracker.java:347)
+	at org.alfresco.solr.tracker.AclTracker.trackRepository(AclTracker.java:313)
+	at org.alfresco.solr.tracker.AclTracker.doTrack(AclTracker.java:104)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:153)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-20 08:43:00,024 ERROR [org.alfresco.solr.tracker.AbstractTracker] Tracking failed
+org.alfresco.error.AlfrescoRuntimeException: 00200031 GetModelsDiff return status is 404
+	at org.alfresco.solr.client.SOLRAPIClient.getModelsDiff(SOLRAPIClient.java:1091)
+	at org.alfresco.solr.tracker.ModelTracker.trackModelsImpl(ModelTracker.java:249)
+	at org.alfresco.solr.tracker.ModelTracker.trackModels(ModelTracker.java:207)
+	at org.alfresco.solr.tracker.ModelTracker.doTrack(ModelTracker.java:167)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:153)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-20 08:43:15,014 ERROR [org.alfresco.solr.tracker.AbstractTracker] Tracking failed
+org.alfresco.error.AlfrescoRuntimeException: 00200033 api/solr/aclchangesets return status:404
+	at org.alfresco.solr.client.SOLRAPIClient.getAclChangeSets(SOLRAPIClient.java:159)
+	at org.alfresco.solr.tracker.AclTracker.checkRepoAndIndexConsistency(AclTracker.java:347)
+	at org.alfresco.solr.tracker.AclTracker.trackRepository(AclTracker.java:313)
+	at org.alfresco.solr.tracker.AclTracker.doTrack(AclTracker.java:104)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:153)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-20 08:43:15,015 ERROR [org.alfresco.solr.tracker.AbstractTracker] Tracking failed
+org.alfresco.error.AlfrescoRuntimeException: 00200032 api/solr/aclchangesets return status:404
+	at org.alfresco.solr.client.SOLRAPIClient.getAclChangeSets(SOLRAPIClient.java:159)
+	at org.alfresco.solr.tracker.AclTracker.checkRepoAndIndexConsistency(AclTracker.java:347)
+	at org.alfresco.solr.tracker.AclTracker.trackRepository(AclTracker.java:313)
+	at org.alfresco.solr.tracker.AclTracker.doTrack(AclTracker.java:104)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:153)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-20 08:43:15,026 ERROR [org.alfresco.solr.tracker.AbstractTracker] Tracking failed
+org.alfresco.error.AlfrescoRuntimeException: 00200034 GetModelsDiff return status is 404
+	at org.alfresco.solr.client.SOLRAPIClient.getModelsDiff(SOLRAPIClient.java:1091)
+	at org.alfresco.solr.tracker.ModelTracker.trackModelsImpl(ModelTracker.java:249)
+	at org.alfresco.solr.tracker.ModelTracker.trackModels(ModelTracker.java:207)
+	at org.alfresco.solr.tracker.ModelTracker.doTrack(ModelTracker.java:167)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:153)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-20 08:43:30,010 ERROR [org.alfresco.solr.tracker.AbstractTracker] Tracking failed
+org.alfresco.error.AlfrescoRuntimeException: 00200036 api/solr/aclchangesets return status:404
+	at org.alfresco.solr.client.SOLRAPIClient.getAclChangeSets(SOLRAPIClient.java:159)
+	at org.alfresco.solr.tracker.AclTracker.checkRepoAndIndexConsistency(AclTracker.java:347)
+	at org.alfresco.solr.tracker.AclTracker.trackRepository(AclTracker.java:313)
+	at org.alfresco.solr.tracker.AclTracker.doTrack(AclTracker.java:104)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:153)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-20 08:43:30,010 ERROR [org.alfresco.solr.tracker.AbstractTracker] Tracking failed
+org.alfresco.error.AlfrescoRuntimeException: 00200035 api/solr/aclchangesets return status:404
+	at org.alfresco.solr.client.SOLRAPIClient.getAclChangeSets(SOLRAPIClient.java:159)
+	at org.alfresco.solr.tracker.AclTracker.checkRepoAndIndexConsistency(AclTracker.java:347)
+	at org.alfresco.solr.tracker.AclTracker.trackRepository(AclTracker.java:313)
+	at org.alfresco.solr.tracker.AclTracker.doTrack(AclTracker.java:104)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:153)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-20 08:43:30,023 ERROR [org.alfresco.solr.tracker.AbstractTracker] Tracking failed
+org.alfresco.error.AlfrescoRuntimeException: 00200037 GetModelsDiff return status is 404
+	at org.alfresco.solr.client.SOLRAPIClient.getModelsDiff(SOLRAPIClient.java:1091)
+	at org.alfresco.solr.tracker.ModelTracker.trackModelsImpl(ModelTracker.java:249)
+	at org.alfresco.solr.tracker.ModelTracker.trackModels(ModelTracker.java:207)
+	at org.alfresco.solr.tracker.ModelTracker.doTrack(ModelTracker.java:167)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:153)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-20 08:43:45,013 ERROR [org.alfresco.solr.tracker.AbstractTracker] Tracking failed
+org.alfresco.error.AlfrescoRuntimeException: 00200039 api/solr/aclchangesets return status:404
+	at org.alfresco.solr.client.SOLRAPIClient.getAclChangeSets(SOLRAPIClient.java:159)
+	at org.alfresco.solr.tracker.AclTracker.checkRepoAndIndexConsistency(AclTracker.java:347)
+	at org.alfresco.solr.tracker.AclTracker.trackRepository(AclTracker.java:313)
+	at org.alfresco.solr.tracker.AclTracker.doTrack(AclTracker.java:104)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:153)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-20 08:43:45,015 ERROR [org.alfresco.solr.tracker.AbstractTracker] Tracking failed
+org.alfresco.error.AlfrescoRuntimeException: 00200038 api/solr/aclchangesets return status:404
+	at org.alfresco.solr.client.SOLRAPIClient.getAclChangeSets(SOLRAPIClient.java:159)
+	at org.alfresco.solr.tracker.AclTracker.checkRepoAndIndexConsistency(AclTracker.java:347)
+	at org.alfresco.solr.tracker.AclTracker.trackRepository(AclTracker.java:313)
+	at org.alfresco.solr.tracker.AclTracker.doTrack(AclTracker.java:104)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:153)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-20 08:43:45,025 ERROR [org.alfresco.solr.tracker.AbstractTracker] Tracking failed
+org.alfresco.error.AlfrescoRuntimeException: 00200040 GetModelsDiff return status is 404
+	at org.alfresco.solr.client.SOLRAPIClient.getModelsDiff(SOLRAPIClient.java:1091)
+	at org.alfresco.solr.tracker.ModelTracker.trackModelsImpl(ModelTracker.java:249)
+	at org.alfresco.solr.tracker.ModelTracker.trackModels(ModelTracker.java:207)
+	at org.alfresco.solr.tracker.ModelTracker.doTrack(ModelTracker.java:167)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:153)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-20 08:44:00,011 ERROR [org.alfresco.solr.tracker.AbstractTracker] Tracking failed
+org.alfresco.error.AlfrescoRuntimeException: 00200042 api/solr/aclchangesets return status:404
+	at org.alfresco.solr.client.SOLRAPIClient.getAclChangeSets(SOLRAPIClient.java:159)
+	at org.alfresco.solr.tracker.AclTracker.checkRepoAndIndexConsistency(AclTracker.java:347)
+	at org.alfresco.solr.tracker.AclTracker.trackRepository(AclTracker.java:313)
+	at org.alfresco.solr.tracker.AclTracker.doTrack(AclTracker.java:104)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:153)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-20 08:44:00,012 ERROR [org.alfresco.solr.tracker.AbstractTracker] Tracking failed
+org.alfresco.error.AlfrescoRuntimeException: 00200041 api/solr/aclchangesets return status:404
+	at org.alfresco.solr.client.SOLRAPIClient.getAclChangeSets(SOLRAPIClient.java:159)
+	at org.alfresco.solr.tracker.AclTracker.checkRepoAndIndexConsistency(AclTracker.java:347)
+	at org.alfresco.solr.tracker.AclTracker.trackRepository(AclTracker.java:313)
+	at org.alfresco.solr.tracker.AclTracker.doTrack(AclTracker.java:104)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:153)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-20 08:44:00,023 ERROR [org.alfresco.solr.tracker.AbstractTracker] Tracking failed
+org.alfresco.error.AlfrescoRuntimeException: 00200043 GetModelsDiff return status is 404
+	at org.alfresco.solr.client.SOLRAPIClient.getModelsDiff(SOLRAPIClient.java:1091)
+	at org.alfresco.solr.tracker.ModelTracker.trackModelsImpl(ModelTracker.java:249)
+	at org.alfresco.solr.tracker.ModelTracker.trackModels(ModelTracker.java:207)
+	at org.alfresco.solr.tracker.ModelTracker.doTrack(ModelTracker.java:167)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:153)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-20 08:44:15,011 ERROR [org.alfresco.solr.tracker.AbstractTracker] Tracking failed
+org.alfresco.error.AlfrescoRuntimeException: 00200045 api/solr/aclchangesets return status:404
+	at org.alfresco.solr.client.SOLRAPIClient.getAclChangeSets(SOLRAPIClient.java:159)
+	at org.alfresco.solr.tracker.AclTracker.checkRepoAndIndexConsistency(AclTracker.java:347)
+	at org.alfresco.solr.tracker.AclTracker.trackRepository(AclTracker.java:313)
+	at org.alfresco.solr.tracker.AclTracker.doTrack(AclTracker.java:104)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:153)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-20 08:44:15,012 ERROR [org.alfresco.solr.tracker.AbstractTracker] Tracking failed
+org.alfresco.error.AlfrescoRuntimeException: 00200044 api/solr/aclchangesets return status:404
+	at org.alfresco.solr.client.SOLRAPIClient.getAclChangeSets(SOLRAPIClient.java:159)
+	at org.alfresco.solr.tracker.AclTracker.checkRepoAndIndexConsistency(AclTracker.java:347)
+	at org.alfresco.solr.tracker.AclTracker.trackRepository(AclTracker.java:313)
+	at org.alfresco.solr.tracker.AclTracker.doTrack(AclTracker.java:104)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:153)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-20 08:44:15,022 ERROR [org.alfresco.solr.tracker.AbstractTracker] Tracking failed
+org.alfresco.error.AlfrescoRuntimeException: 00200046 GetModelsDiff return status is 404
+	at org.alfresco.solr.client.SOLRAPIClient.getModelsDiff(SOLRAPIClient.java:1091)
+	at org.alfresco.solr.tracker.ModelTracker.trackModelsImpl(ModelTracker.java:249)
+	at org.alfresco.solr.tracker.ModelTracker.trackModels(ModelTracker.java:207)
+	at org.alfresco.solr.tracker.ModelTracker.doTrack(ModelTracker.java:167)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:153)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-20 08:44:30,015 ERROR [org.alfresco.solr.tracker.AbstractTracker] Tracking failed
+org.alfresco.error.AlfrescoRuntimeException: 00200048 api/solr/aclchangesets return status:404
+	at org.alfresco.solr.client.SOLRAPIClient.getAclChangeSets(SOLRAPIClient.java:159)
+	at org.alfresco.solr.tracker.AclTracker.checkRepoAndIndexConsistency(AclTracker.java:347)
+	at org.alfresco.solr.tracker.AclTracker.trackRepository(AclTracker.java:313)
+	at org.alfresco.solr.tracker.AclTracker.doTrack(AclTracker.java:104)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:153)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-20 08:44:30,016 ERROR [org.alfresco.solr.tracker.AbstractTracker] Tracking failed
+org.alfresco.error.AlfrescoRuntimeException: 00200047 api/solr/aclchangesets return status:404
+	at org.alfresco.solr.client.SOLRAPIClient.getAclChangeSets(SOLRAPIClient.java:159)
+	at org.alfresco.solr.tracker.AclTracker.checkRepoAndIndexConsistency(AclTracker.java:347)
+	at org.alfresco.solr.tracker.AclTracker.trackRepository(AclTracker.java:313)
+	at org.alfresco.solr.tracker.AclTracker.doTrack(AclTracker.java:104)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:153)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-20 08:44:30,027 ERROR [org.alfresco.solr.tracker.AbstractTracker] Tracking failed
+org.alfresco.error.AlfrescoRuntimeException: 00200049 GetModelsDiff return status is 404
+	at org.alfresco.solr.client.SOLRAPIClient.getModelsDiff(SOLRAPIClient.java:1091)
+	at org.alfresco.solr.tracker.ModelTracker.trackModelsImpl(ModelTracker.java:249)
+	at org.alfresco.solr.tracker.ModelTracker.trackModels(ModelTracker.java:207)
+	at org.alfresco.solr.tracker.ModelTracker.doTrack(ModelTracker.java:167)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:153)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-20 08:44:45,009 ERROR [org.alfresco.solr.tracker.AbstractTracker] Tracking failed
+org.alfresco.error.AlfrescoRuntimeException: 00200051 api/solr/aclchangesets return status:404
+	at org.alfresco.solr.client.SOLRAPIClient.getAclChangeSets(SOLRAPIClient.java:159)
+	at org.alfresco.solr.tracker.AclTracker.checkRepoAndIndexConsistency(AclTracker.java:347)
+	at org.alfresco.solr.tracker.AclTracker.trackRepository(AclTracker.java:313)
+	at org.alfresco.solr.tracker.AclTracker.doTrack(AclTracker.java:104)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:153)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-20 08:44:45,011 ERROR [org.alfresco.solr.tracker.AbstractTracker] Tracking failed
+org.alfresco.error.AlfrescoRuntimeException: 00200050 api/solr/aclchangesets return status:404
+	at org.alfresco.solr.client.SOLRAPIClient.getAclChangeSets(SOLRAPIClient.java:159)
+	at org.alfresco.solr.tracker.AclTracker.checkRepoAndIndexConsistency(AclTracker.java:347)
+	at org.alfresco.solr.tracker.AclTracker.trackRepository(AclTracker.java:313)
+	at org.alfresco.solr.tracker.AclTracker.doTrack(AclTracker.java:104)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:153)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-20 08:44:45,021 ERROR [org.alfresco.solr.tracker.AbstractTracker] Tracking failed
+org.alfresco.error.AlfrescoRuntimeException: 00200052 GetModelsDiff return status is 404
+	at org.alfresco.solr.client.SOLRAPIClient.getModelsDiff(SOLRAPIClient.java:1091)
+	at org.alfresco.solr.tracker.ModelTracker.trackModelsImpl(ModelTracker.java:249)
+	at org.alfresco.solr.tracker.ModelTracker.trackModels(ModelTracker.java:207)
+	at org.alfresco.solr.tracker.ModelTracker.doTrack(ModelTracker.java:167)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:153)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-20 08:45:00,010 ERROR [org.alfresco.solr.tracker.AbstractTracker] Tracking failed
+org.alfresco.error.AlfrescoRuntimeException: 00200054 api/solr/aclchangesets return status:404
+	at org.alfresco.solr.client.SOLRAPIClient.getAclChangeSets(SOLRAPIClient.java:159)
+	at org.alfresco.solr.tracker.AclTracker.checkRepoAndIndexConsistency(AclTracker.java:347)
+	at org.alfresco.solr.tracker.AclTracker.trackRepository(AclTracker.java:313)
+	at org.alfresco.solr.tracker.AclTracker.doTrack(AclTracker.java:104)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:153)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-20 08:45:00,011 ERROR [org.alfresco.solr.tracker.AbstractTracker] Tracking failed
+org.alfresco.error.AlfrescoRuntimeException: 00200053 api/solr/aclchangesets return status:404
+	at org.alfresco.solr.client.SOLRAPIClient.getAclChangeSets(SOLRAPIClient.java:159)
+	at org.alfresco.solr.tracker.AclTracker.checkRepoAndIndexConsistency(AclTracker.java:347)
+	at org.alfresco.solr.tracker.AclTracker.trackRepository(AclTracker.java:313)
+	at org.alfresco.solr.tracker.AclTracker.doTrack(AclTracker.java:104)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:153)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-20 08:45:00,023 ERROR [org.alfresco.solr.tracker.AbstractTracker] Tracking failed
+org.alfresco.error.AlfrescoRuntimeException: 00200055 GetModelsDiff return status is 404
+	at org.alfresco.solr.client.SOLRAPIClient.getModelsDiff(SOLRAPIClient.java:1091)
+	at org.alfresco.solr.tracker.ModelTracker.trackModelsImpl(ModelTracker.java:249)
+	at org.alfresco.solr.tracker.ModelTracker.trackModels(ModelTracker.java:207)
+	at org.alfresco.solr.tracker.ModelTracker.doTrack(ModelTracker.java:167)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:153)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-20 08:51:49,530 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Initializing SuggestComponent
+2016-01-20 08:51:49,530 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Initializing SuggestComponent
+2016-01-20 08:51:49,621 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Loading suggester index for: shingleBasedSuggestions
+2016-01-20 08:51:49,916 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Loaded suggester shingleBasedSuggestions, took 295 ms
+2016-01-20 08:52:00,715 ERROR [org.alfresco.solr.tracker.AbstractTracker] Model tracking failed
+org.alfresco.error.AlfrescoRuntimeException: 00200000 GetModelsDiff return status is 404
+	at org.alfresco.solr.client.SOLRAPIClient.getModelsDiff(SOLRAPIClient.java:1091)
+	at org.alfresco.solr.tracker.ModelTracker.trackModelsImpl(ModelTracker.java:249)
+	at org.alfresco.solr.tracker.ModelTracker.trackModels(ModelTracker.java:207)
+	at org.alfresco.solr.tracker.ModelTracker.ensureFirstModelSync(ModelTracker.java:229)
+	at org.alfresco.solr.tracker.CoreWatcherJob.registerForCore(CoreWatcherJob.java:131)
+	at org.alfresco.solr.tracker.CoreWatcherJob.execute(CoreWatcherJob.java:74)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-20 08:52:00,755 ERROR [org.alfresco.solr.tracker.AbstractTracker] Tracking failed
+org.alfresco.error.AlfrescoRuntimeException: 00200001 api/solr/aclchangesets return status:404
+	at org.alfresco.solr.client.SOLRAPIClient.getAclChangeSets(SOLRAPIClient.java:159)
+	at org.alfresco.solr.tracker.AclTracker.checkRepoAndIndexConsistency(AclTracker.java:347)
+	at org.alfresco.solr.tracker.AclTracker.trackRepository(AclTracker.java:313)
+	at org.alfresco.solr.tracker.AclTracker.doTrack(AclTracker.java:104)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:153)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-20 08:52:00,767 ERROR [org.alfresco.solr.tracker.AbstractTracker] Tracking failed
+org.alfresco.error.AlfrescoRuntimeException: 00200002 GetModelsDiff return status is 404
+	at org.alfresco.solr.client.SOLRAPIClient.getModelsDiff(SOLRAPIClient.java:1091)
+	at org.alfresco.solr.tracker.ModelTracker.trackModelsImpl(ModelTracker.java:249)
+	at org.alfresco.solr.tracker.ModelTracker.trackModels(ModelTracker.java:207)
+	at org.alfresco.solr.tracker.ModelTracker.doTrack(ModelTracker.java:167)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:153)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-20 08:52:00,788 ERROR [org.alfresco.solr.tracker.AbstractTracker] Model tracking failed
+org.alfresco.error.AlfrescoRuntimeException: 00200003 GetModelsDiff return status is 404
+	at org.alfresco.solr.client.SOLRAPIClient.getModelsDiff(SOLRAPIClient.java:1091)
+	at org.alfresco.solr.tracker.ModelTracker.trackModelsImpl(ModelTracker.java:249)
+	at org.alfresco.solr.tracker.ModelTracker.trackModels(ModelTracker.java:207)
+	at org.alfresco.solr.tracker.ModelTracker.ensureFirstModelSync(ModelTracker.java:229)
+	at org.alfresco.solr.tracker.CoreWatcherJob.registerForCore(CoreWatcherJob.java:131)
+	at org.alfresco.solr.tracker.CoreWatcherJob.execute(CoreWatcherJob.java:74)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-20 08:52:00,807 ERROR [org.alfresco.solr.tracker.AbstractTracker] Tracking failed
+org.alfresco.error.AlfrescoRuntimeException: 00200004 api/solr/aclchangesets return status:404
+	at org.alfresco.solr.client.SOLRAPIClient.getAclChangeSets(SOLRAPIClient.java:159)
+	at org.alfresco.solr.tracker.AclTracker.checkRepoAndIndexConsistency(AclTracker.java:347)
+	at org.alfresco.solr.tracker.AclTracker.trackRepository(AclTracker.java:313)
+	at org.alfresco.solr.tracker.AclTracker.doTrack(AclTracker.java:104)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:153)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-20 08:52:15,020 ERROR [org.alfresco.solr.tracker.AbstractTracker] Tracking failed
+org.alfresco.error.AlfrescoRuntimeException: 00200005 api/solr/aclchangesets return status:404
+	at org.alfresco.solr.client.SOLRAPIClient.getAclChangeSets(SOLRAPIClient.java:159)
+	at org.alfresco.solr.tracker.AclTracker.checkRepoAndIndexConsistency(AclTracker.java:347)
+	at org.alfresco.solr.tracker.AclTracker.trackRepository(AclTracker.java:313)
+	at org.alfresco.solr.tracker.AclTracker.doTrack(AclTracker.java:104)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:153)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-20 08:52:15,020 ERROR [org.alfresco.solr.tracker.AbstractTracker] Tracking failed
+org.alfresco.error.AlfrescoRuntimeException: 00200006 api/solr/aclchangesets return status:404
+	at org.alfresco.solr.client.SOLRAPIClient.getAclChangeSets(SOLRAPIClient.java:159)
+	at org.alfresco.solr.tracker.AclTracker.checkRepoAndIndexConsistency(AclTracker.java:347)
+	at org.alfresco.solr.tracker.AclTracker.trackRepository(AclTracker.java:313)
+	at org.alfresco.solr.tracker.AclTracker.doTrack(AclTracker.java:104)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:153)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-20 08:52:15,065 ERROR [org.alfresco.solr.tracker.AbstractTracker] Tracking failed
+org.alfresco.error.AlfrescoRuntimeException: 00200007 GetModelsDiff return status is 404
+	at org.alfresco.solr.client.SOLRAPIClient.getModelsDiff(SOLRAPIClient.java:1091)
+	at org.alfresco.solr.tracker.ModelTracker.trackModelsImpl(ModelTracker.java:249)
+	at org.alfresco.solr.tracker.ModelTracker.trackModels(ModelTracker.java:207)
+	at org.alfresco.solr.tracker.ModelTracker.doTrack(ModelTracker.java:167)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:153)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-20 08:52:30,018 ERROR [org.alfresco.solr.tracker.AbstractTracker] Tracking failed
+org.alfresco.error.AlfrescoRuntimeException: 00200008 api/solr/aclchangesets return status:404
+	at org.alfresco.solr.client.SOLRAPIClient.getAclChangeSets(SOLRAPIClient.java:159)
+	at org.alfresco.solr.tracker.AclTracker.checkRepoAndIndexConsistency(AclTracker.java:347)
+	at org.alfresco.solr.tracker.AclTracker.trackRepository(AclTracker.java:313)
+	at org.alfresco.solr.tracker.AclTracker.doTrack(AclTracker.java:104)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:153)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-20 08:52:30,054 ERROR [org.alfresco.solr.tracker.AbstractTracker] Tracking failed
+org.alfresco.error.AlfrescoRuntimeException: 00200009 api/solr/aclchangesets return status:404
+	at org.alfresco.solr.client.SOLRAPIClient.getAclChangeSets(SOLRAPIClient.java:159)
+	at org.alfresco.solr.tracker.AclTracker.checkRepoAndIndexConsistency(AclTracker.java:347)
+	at org.alfresco.solr.tracker.AclTracker.trackRepository(AclTracker.java:313)
+	at org.alfresco.solr.tracker.AclTracker.doTrack(AclTracker.java:104)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:153)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-20 08:52:30,065 ERROR [org.alfresco.solr.tracker.AbstractTracker] Tracking failed
+org.alfresco.error.AlfrescoRuntimeException: 00200010 GetModelsDiff return status is 404
+	at org.alfresco.solr.client.SOLRAPIClient.getModelsDiff(SOLRAPIClient.java:1091)
+	at org.alfresco.solr.tracker.ModelTracker.trackModelsImpl(ModelTracker.java:249)
+	at org.alfresco.solr.tracker.ModelTracker.trackModels(ModelTracker.java:207)
+	at org.alfresco.solr.tracker.ModelTracker.doTrack(ModelTracker.java:167)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:153)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-20 08:52:45,013 ERROR [org.alfresco.solr.tracker.AbstractTracker] Tracking failed
+org.alfresco.error.AlfrescoRuntimeException: 00200012 api/solr/aclchangesets return status:404
+	at org.alfresco.solr.client.SOLRAPIClient.getAclChangeSets(SOLRAPIClient.java:159)
+	at org.alfresco.solr.tracker.AclTracker.checkRepoAndIndexConsistency(AclTracker.java:347)
+	at org.alfresco.solr.tracker.AclTracker.trackRepository(AclTracker.java:313)
+	at org.alfresco.solr.tracker.AclTracker.doTrack(AclTracker.java:104)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:153)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-20 08:52:45,015 ERROR [org.alfresco.solr.tracker.AbstractTracker] Tracking failed
+org.alfresco.error.AlfrescoRuntimeException: 00200011 api/solr/aclchangesets return status:404
+	at org.alfresco.solr.client.SOLRAPIClient.getAclChangeSets(SOLRAPIClient.java:159)
+	at org.alfresco.solr.tracker.AclTracker.checkRepoAndIndexConsistency(AclTracker.java:347)
+	at org.alfresco.solr.tracker.AclTracker.trackRepository(AclTracker.java:313)
+	at org.alfresco.solr.tracker.AclTracker.doTrack(AclTracker.java:104)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:153)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-20 08:52:45,028 ERROR [org.alfresco.solr.tracker.AbstractTracker] Tracking failed
+org.alfresco.error.AlfrescoRuntimeException: 00200013 GetModelsDiff return status is 404
+	at org.alfresco.solr.client.SOLRAPIClient.getModelsDiff(SOLRAPIClient.java:1091)
+	at org.alfresco.solr.tracker.ModelTracker.trackModelsImpl(ModelTracker.java:249)
+	at org.alfresco.solr.tracker.ModelTracker.trackModels(ModelTracker.java:207)
+	at org.alfresco.solr.tracker.ModelTracker.doTrack(ModelTracker.java:167)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:153)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-20 08:53:00,011 ERROR [org.alfresco.solr.tracker.AbstractTracker] Tracking failed
+org.alfresco.error.AlfrescoRuntimeException: 00200015 api/solr/aclchangesets return status:404
+	at org.alfresco.solr.client.SOLRAPIClient.getAclChangeSets(SOLRAPIClient.java:159)
+	at org.alfresco.solr.tracker.AclTracker.checkRepoAndIndexConsistency(AclTracker.java:347)
+	at org.alfresco.solr.tracker.AclTracker.trackRepository(AclTracker.java:313)
+	at org.alfresco.solr.tracker.AclTracker.doTrack(AclTracker.java:104)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:153)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-20 08:53:00,014 ERROR [org.alfresco.solr.tracker.AbstractTracker] Tracking failed
+org.alfresco.error.AlfrescoRuntimeException: 00200014 api/solr/aclchangesets return status:404
+	at org.alfresco.solr.client.SOLRAPIClient.getAclChangeSets(SOLRAPIClient.java:159)
+	at org.alfresco.solr.tracker.AclTracker.checkRepoAndIndexConsistency(AclTracker.java:347)
+	at org.alfresco.solr.tracker.AclTracker.trackRepository(AclTracker.java:313)
+	at org.alfresco.solr.tracker.AclTracker.doTrack(AclTracker.java:104)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:153)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-20 08:53:00,031 ERROR [org.alfresco.solr.tracker.AbstractTracker] Tracking failed
+org.alfresco.error.AlfrescoRuntimeException: 00200016 GetModelsDiff return status is 404
+	at org.alfresco.solr.client.SOLRAPIClient.getModelsDiff(SOLRAPIClient.java:1091)
+	at org.alfresco.solr.tracker.ModelTracker.trackModelsImpl(ModelTracker.java:249)
+	at org.alfresco.solr.tracker.ModelTracker.trackModels(ModelTracker.java:207)
+	at org.alfresco.solr.tracker.ModelTracker.doTrack(ModelTracker.java:167)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:153)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-20 08:53:15,018 ERROR [org.alfresco.solr.tracker.AbstractTracker] Tracking failed
+org.alfresco.error.AlfrescoRuntimeException: 00200018 api/solr/aclchangesets return status:404
+	at org.alfresco.solr.client.SOLRAPIClient.getAclChangeSets(SOLRAPIClient.java:159)
+	at org.alfresco.solr.tracker.AclTracker.checkRepoAndIndexConsistency(AclTracker.java:347)
+	at org.alfresco.solr.tracker.AclTracker.trackRepository(AclTracker.java:313)
+	at org.alfresco.solr.tracker.AclTracker.doTrack(AclTracker.java:104)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:153)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-20 08:53:15,020 ERROR [org.alfresco.solr.tracker.AbstractTracker] Tracking failed
+org.alfresco.error.AlfrescoRuntimeException: 00200017 api/solr/aclchangesets return status:404
+	at org.alfresco.solr.client.SOLRAPIClient.getAclChangeSets(SOLRAPIClient.java:159)
+	at org.alfresco.solr.tracker.AclTracker.checkRepoAndIndexConsistency(AclTracker.java:347)
+	at org.alfresco.solr.tracker.AclTracker.trackRepository(AclTracker.java:313)
+	at org.alfresco.solr.tracker.AclTracker.doTrack(AclTracker.java:104)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:153)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-20 08:53:15,033 ERROR [org.alfresco.solr.tracker.AbstractTracker] Tracking failed
+org.alfresco.error.AlfrescoRuntimeException: 00200019 GetModelsDiff return status is 404
+	at org.alfresco.solr.client.SOLRAPIClient.getModelsDiff(SOLRAPIClient.java:1091)
+	at org.alfresco.solr.tracker.ModelTracker.trackModelsImpl(ModelTracker.java:249)
+	at org.alfresco.solr.tracker.ModelTracker.trackModels(ModelTracker.java:207)
+	at org.alfresco.solr.tracker.ModelTracker.doTrack(ModelTracker.java:167)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:153)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-20 08:53:30,012 ERROR [org.alfresco.solr.tracker.AbstractTracker] Tracking failed
+org.alfresco.error.AlfrescoRuntimeException: 00200021 api/solr/aclchangesets return status:404
+	at org.alfresco.solr.client.SOLRAPIClient.getAclChangeSets(SOLRAPIClient.java:159)
+	at org.alfresco.solr.tracker.AclTracker.checkRepoAndIndexConsistency(AclTracker.java:347)
+	at org.alfresco.solr.tracker.AclTracker.trackRepository(AclTracker.java:313)
+	at org.alfresco.solr.tracker.AclTracker.doTrack(AclTracker.java:104)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:153)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-20 08:53:30,013 ERROR [org.alfresco.solr.tracker.AbstractTracker] Tracking failed
+org.alfresco.error.AlfrescoRuntimeException: 00200020 api/solr/aclchangesets return status:404
+	at org.alfresco.solr.client.SOLRAPIClient.getAclChangeSets(SOLRAPIClient.java:159)
+	at org.alfresco.solr.tracker.AclTracker.checkRepoAndIndexConsistency(AclTracker.java:347)
+	at org.alfresco.solr.tracker.AclTracker.trackRepository(AclTracker.java:313)
+	at org.alfresco.solr.tracker.AclTracker.doTrack(AclTracker.java:104)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:153)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-20 08:53:30,025 ERROR [org.alfresco.solr.tracker.AbstractTracker] Tracking failed
+org.alfresco.error.AlfrescoRuntimeException: 00200022 GetModelsDiff return status is 404
+	at org.alfresco.solr.client.SOLRAPIClient.getModelsDiff(SOLRAPIClient.java:1091)
+	at org.alfresco.solr.tracker.ModelTracker.trackModelsImpl(ModelTracker.java:249)
+	at org.alfresco.solr.tracker.ModelTracker.trackModels(ModelTracker.java:207)
+	at org.alfresco.solr.tracker.ModelTracker.doTrack(ModelTracker.java:167)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:153)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-20 08:53:45,014 ERROR [org.alfresco.solr.tracker.AbstractTracker] Tracking failed
+org.alfresco.error.AlfrescoRuntimeException: 00200023 api/solr/aclchangesets return status:404
+	at org.alfresco.solr.client.SOLRAPIClient.getAclChangeSets(SOLRAPIClient.java:159)
+	at org.alfresco.solr.tracker.AclTracker.checkRepoAndIndexConsistency(AclTracker.java:347)
+	at org.alfresco.solr.tracker.AclTracker.trackRepository(AclTracker.java:313)
+	at org.alfresco.solr.tracker.AclTracker.doTrack(AclTracker.java:104)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:153)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-20 08:53:45,016 ERROR [org.alfresco.solr.tracker.AbstractTracker] Tracking failed
+org.alfresco.error.AlfrescoRuntimeException: 00200024 api/solr/aclchangesets return status:404
+	at org.alfresco.solr.client.SOLRAPIClient.getAclChangeSets(SOLRAPIClient.java:159)
+	at org.alfresco.solr.tracker.AclTracker.checkRepoAndIndexConsistency(AclTracker.java:347)
+	at org.alfresco.solr.tracker.AclTracker.trackRepository(AclTracker.java:313)
+	at org.alfresco.solr.tracker.AclTracker.doTrack(AclTracker.java:104)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:153)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-20 08:53:45,031 ERROR [org.alfresco.solr.tracker.AbstractTracker] Tracking failed
+org.alfresco.error.AlfrescoRuntimeException: 00200025 GetModelsDiff return status is 404
+	at org.alfresco.solr.client.SOLRAPIClient.getModelsDiff(SOLRAPIClient.java:1091)
+	at org.alfresco.solr.tracker.ModelTracker.trackModelsImpl(ModelTracker.java:249)
+	at org.alfresco.solr.tracker.ModelTracker.trackModels(ModelTracker.java:207)
+	at org.alfresco.solr.tracker.ModelTracker.doTrack(ModelTracker.java:167)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:153)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-20 08:54:00,016 ERROR [org.alfresco.solr.tracker.AbstractTracker] Tracking failed
+org.alfresco.error.AlfrescoRuntimeException: 00200027 api/solr/aclchangesets return status:404
+	at org.alfresco.solr.client.SOLRAPIClient.getAclChangeSets(SOLRAPIClient.java:159)
+	at org.alfresco.solr.tracker.AclTracker.checkRepoAndIndexConsistency(AclTracker.java:347)
+	at org.alfresco.solr.tracker.AclTracker.trackRepository(AclTracker.java:313)
+	at org.alfresco.solr.tracker.AclTracker.doTrack(AclTracker.java:104)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:153)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-20 08:54:00,018 ERROR [org.alfresco.solr.tracker.AbstractTracker] Tracking failed
+org.alfresco.error.AlfrescoRuntimeException: 00200026 api/solr/aclchangesets return status:404
+	at org.alfresco.solr.client.SOLRAPIClient.getAclChangeSets(SOLRAPIClient.java:159)
+	at org.alfresco.solr.tracker.AclTracker.checkRepoAndIndexConsistency(AclTracker.java:347)
+	at org.alfresco.solr.tracker.AclTracker.trackRepository(AclTracker.java:313)
+	at org.alfresco.solr.tracker.AclTracker.doTrack(AclTracker.java:104)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:153)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-20 08:54:00,028 ERROR [org.alfresco.solr.tracker.AbstractTracker] Tracking failed
+org.alfresco.error.AlfrescoRuntimeException: 00200028 GetModelsDiff return status is 404
+	at org.alfresco.solr.client.SOLRAPIClient.getModelsDiff(SOLRAPIClient.java:1091)
+	at org.alfresco.solr.tracker.ModelTracker.trackModelsImpl(ModelTracker.java:249)
+	at org.alfresco.solr.tracker.ModelTracker.trackModels(ModelTracker.java:207)
+	at org.alfresco.solr.tracker.ModelTracker.doTrack(ModelTracker.java:167)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:153)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-20 08:54:15,016 ERROR [org.alfresco.solr.tracker.AbstractTracker] Tracking failed
+org.alfresco.error.AlfrescoRuntimeException: 00200029 api/solr/aclchangesets return status:404
+	at org.alfresco.solr.client.SOLRAPIClient.getAclChangeSets(SOLRAPIClient.java:159)
+	at org.alfresco.solr.tracker.AclTracker.checkRepoAndIndexConsistency(AclTracker.java:347)
+	at org.alfresco.solr.tracker.AclTracker.trackRepository(AclTracker.java:313)
+	at org.alfresco.solr.tracker.AclTracker.doTrack(AclTracker.java:104)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:153)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-20 08:54:15,018 ERROR [org.alfresco.solr.tracker.AbstractTracker] Tracking failed
+org.alfresco.error.AlfrescoRuntimeException: 00200030 api/solr/aclchangesets return status:404
+	at org.alfresco.solr.client.SOLRAPIClient.getAclChangeSets(SOLRAPIClient.java:159)
+	at org.alfresco.solr.tracker.AclTracker.checkRepoAndIndexConsistency(AclTracker.java:347)
+	at org.alfresco.solr.tracker.AclTracker.trackRepository(AclTracker.java:313)
+	at org.alfresco.solr.tracker.AclTracker.doTrack(AclTracker.java:104)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:153)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-20 08:54:15,029 ERROR [org.alfresco.solr.tracker.AbstractTracker] Tracking failed
+org.alfresco.error.AlfrescoRuntimeException: 00200031 GetModelsDiff return status is 404
+	at org.alfresco.solr.client.SOLRAPIClient.getModelsDiff(SOLRAPIClient.java:1091)
+	at org.alfresco.solr.tracker.ModelTracker.trackModelsImpl(ModelTracker.java:249)
+	at org.alfresco.solr.tracker.ModelTracker.trackModels(ModelTracker.java:207)
+	at org.alfresco.solr.tracker.ModelTracker.doTrack(ModelTracker.java:167)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:153)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-20 08:54:30,011 ERROR [org.alfresco.solr.tracker.AbstractTracker] Tracking failed
+org.alfresco.error.AlfrescoRuntimeException: 00200032 api/solr/aclchangesets return status:404
+	at org.alfresco.solr.client.SOLRAPIClient.getAclChangeSets(SOLRAPIClient.java:159)
+	at org.alfresco.solr.tracker.AclTracker.checkRepoAndIndexConsistency(AclTracker.java:347)
+	at org.alfresco.solr.tracker.AclTracker.trackRepository(AclTracker.java:313)
+	at org.alfresco.solr.tracker.AclTracker.doTrack(AclTracker.java:104)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:153)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-20 08:54:30,013 ERROR [org.alfresco.solr.tracker.AbstractTracker] Tracking failed
+org.alfresco.error.AlfrescoRuntimeException: 00200033 api/solr/aclchangesets return status:404
+	at org.alfresco.solr.client.SOLRAPIClient.getAclChangeSets(SOLRAPIClient.java:159)
+	at org.alfresco.solr.tracker.AclTracker.checkRepoAndIndexConsistency(AclTracker.java:347)
+	at org.alfresco.solr.tracker.AclTracker.trackRepository(AclTracker.java:313)
+	at org.alfresco.solr.tracker.AclTracker.doTrack(AclTracker.java:104)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:153)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-20 08:54:30,023 ERROR [org.alfresco.solr.tracker.AbstractTracker] Tracking failed
+org.alfresco.error.AlfrescoRuntimeException: 00200034 GetModelsDiff return status is 404
+	at org.alfresco.solr.client.SOLRAPIClient.getModelsDiff(SOLRAPIClient.java:1091)
+	at org.alfresco.solr.tracker.ModelTracker.trackModelsImpl(ModelTracker.java:249)
+	at org.alfresco.solr.tracker.ModelTracker.trackModels(ModelTracker.java:207)
+	at org.alfresco.solr.tracker.ModelTracker.doTrack(ModelTracker.java:167)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:153)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-20 08:54:45,014 ERROR [org.alfresco.solr.tracker.AbstractTracker] Tracking failed
+org.alfresco.error.AlfrescoRuntimeException: 00200036 api/solr/aclchangesets return status:404
+	at org.alfresco.solr.client.SOLRAPIClient.getAclChangeSets(SOLRAPIClient.java:159)
+	at org.alfresco.solr.tracker.AclTracker.checkRepoAndIndexConsistency(AclTracker.java:347)
+	at org.alfresco.solr.tracker.AclTracker.trackRepository(AclTracker.java:313)
+	at org.alfresco.solr.tracker.AclTracker.doTrack(AclTracker.java:104)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:153)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-20 08:54:45,017 ERROR [org.alfresco.solr.tracker.AbstractTracker] Tracking failed
+org.alfresco.error.AlfrescoRuntimeException: 00200035 api/solr/aclchangesets return status:404
+	at org.alfresco.solr.client.SOLRAPIClient.getAclChangeSets(SOLRAPIClient.java:159)
+	at org.alfresco.solr.tracker.AclTracker.checkRepoAndIndexConsistency(AclTracker.java:347)
+	at org.alfresco.solr.tracker.AclTracker.trackRepository(AclTracker.java:313)
+	at org.alfresco.solr.tracker.AclTracker.doTrack(AclTracker.java:104)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:153)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-20 08:54:45,027 ERROR [org.alfresco.solr.tracker.AbstractTracker] Tracking failed
+org.alfresco.error.AlfrescoRuntimeException: 00200037 GetModelsDiff return status is 404
+	at org.alfresco.solr.client.SOLRAPIClient.getModelsDiff(SOLRAPIClient.java:1091)
+	at org.alfresco.solr.tracker.ModelTracker.trackModelsImpl(ModelTracker.java:249)
+	at org.alfresco.solr.tracker.ModelTracker.trackModels(ModelTracker.java:207)
+	at org.alfresco.solr.tracker.ModelTracker.doTrack(ModelTracker.java:167)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:153)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-20 08:55:00,012 ERROR [org.alfresco.solr.tracker.AbstractTracker] Tracking failed
+org.alfresco.error.AlfrescoRuntimeException: 00200039 api/solr/aclchangesets return status:404
+	at org.alfresco.solr.client.SOLRAPIClient.getAclChangeSets(SOLRAPIClient.java:159)
+	at org.alfresco.solr.tracker.AclTracker.checkRepoAndIndexConsistency(AclTracker.java:347)
+	at org.alfresco.solr.tracker.AclTracker.trackRepository(AclTracker.java:313)
+	at org.alfresco.solr.tracker.AclTracker.doTrack(AclTracker.java:104)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:153)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-20 08:55:00,014 ERROR [org.alfresco.solr.tracker.AbstractTracker] Tracking failed
+org.alfresco.error.AlfrescoRuntimeException: 00200038 api/solr/aclchangesets return status:404
+	at org.alfresco.solr.client.SOLRAPIClient.getAclChangeSets(SOLRAPIClient.java:159)
+	at org.alfresco.solr.tracker.AclTracker.checkRepoAndIndexConsistency(AclTracker.java:347)
+	at org.alfresco.solr.tracker.AclTracker.trackRepository(AclTracker.java:313)
+	at org.alfresco.solr.tracker.AclTracker.doTrack(AclTracker.java:104)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:153)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-20 08:55:00,023 ERROR [org.alfresco.solr.tracker.AbstractTracker] Tracking failed
+org.alfresco.error.AlfrescoRuntimeException: 00200040 GetModelsDiff return status is 404
+	at org.alfresco.solr.client.SOLRAPIClient.getModelsDiff(SOLRAPIClient.java:1091)
+	at org.alfresco.solr.tracker.ModelTracker.trackModelsImpl(ModelTracker.java:249)
+	at org.alfresco.solr.tracker.ModelTracker.trackModels(ModelTracker.java:207)
+	at org.alfresco.solr.tracker.ModelTracker.doTrack(ModelTracker.java:167)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:153)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:47)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2016-01-20 09:02:24,622 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Initializing SuggestComponent
+2016-01-20 09:02:24,622 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Initializing SuggestComponent
+2016-01-20 09:02:24,728 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Loading suggester index for: shingleBasedSuggestions
+2016-01-20 09:02:25,040 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Loaded suggester shingleBasedSuggestions, took 312 ms
+2016-01-20 10:18:45,168 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Building suggester index for: shingleBasedSuggestions
+2016-01-20 10:18:45,287 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Built suggester shingleBasedSuggestions, took 119 ms
+2016-01-20 11:39:15,171 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Building suggester index for: shingleBasedSuggestions
+2016-01-20 11:39:15,254 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Built suggester shingleBasedSuggestions, took 83 ms
+2016-01-20 13:36:38,595 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Initializing SuggestComponent
+2016-01-20 13:36:38,595 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Initializing SuggestComponent
+2016-01-20 13:36:38,692 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Loading suggester index for: shingleBasedSuggestions
+2016-01-20 13:36:38,985 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Loaded suggester shingleBasedSuggestions, took 292 ms
+2016-01-20 13:45:34,542 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Initializing SuggestComponent
+2016-01-20 13:45:34,542 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Initializing SuggestComponent
+2016-01-20 13:45:34,674 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Loading suggester index for: shingleBasedSuggestions
+2016-01-20 13:45:34,984 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Loaded suggester shingleBasedSuggestions, took 309 ms

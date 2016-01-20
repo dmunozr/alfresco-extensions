@@ -1,0 +1,10 @@
+<webscript>
+  <shortname>Cache example</shortname>
+  <description>Demonstrate cache controls</description>
+  <url>/cache</url>
+  <authentication>user</authentication>
+  <cache>
+    <never>false</never>
+    <mustrevalidate/>
+  </cache>
+</webscript>

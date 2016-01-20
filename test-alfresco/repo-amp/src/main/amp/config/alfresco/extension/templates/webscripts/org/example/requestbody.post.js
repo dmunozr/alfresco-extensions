@@ -1,0 +1,1 @@
+model.requestcontent = requestbody.content;
